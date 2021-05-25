@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "706974026195",
+    "project_id": "shopall-36d90",
+    "storage_bucket": "shopall-36d90.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:706974026195:android:d5f1f090991ca070238726",
+        "android_client_info": {
+          "package_name": "com.example.shopall"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "706974026195-0d2e56cru2o5kqen6ltjtao76i1dv2hj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCy_05MqII27z-YuHa5Ot-UIf1wh1uJcSk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "706974026195-0d2e56cru2o5kqen6ltjtao76i1dv2hj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

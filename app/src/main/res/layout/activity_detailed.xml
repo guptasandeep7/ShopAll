@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".DetailedActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:weightSum="0"
+        >
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+
+    >
+
+    <ImageView
+        android:id="@+id/dImage"
+        android:layout_width="300dp"
+        android:layout_height="400dp"
+        android:layout_gravity="center"
+        />
+    <TextView
+        android:id="@+id/dName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Product Name"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:id="@+id/dRating"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:text="5"
+            android:gravity="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            />
+        <TextView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:background="@drawable/ic_baseline_star_24"
+
+            />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/dQuantity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="quantity"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+
+        />
+
+
+    <TextView
+        android:id="@+id/dDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="description"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+
+        />
+    <TextView
+        android:id="@+id/dSP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="20000Rs"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+
+        />
+
+    <TextView
+        android:id="@+id/dMRP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="25000Rs" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+        <Button
+            android:id="@+id/dSendRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Send Rating"
+            android:background="@drawable/button_round"
+            />
+    </LinearLayout>
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|bottom"
+            android:layout_weight="0"
+            android:orientation="horizontal"
+
+            >
+
+            <Button
+                android:id="@+id/addToCartButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="ADD TO CART"
+                android:background="@drawable/button_round"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+
+                />
+
+            <Button
+                android:layout_marginLeft="10dp"
+                android:id="@+id/buyButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="BUY"
+                android:background="@drawable/button_round"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

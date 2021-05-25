@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".ui.slideshow.SlideshowFragment">
+
+  <EditText
+      android:id="@+id/currentPin_textView"
+      android:layout_marginTop="20dp"
+      android:layout_width="300dp"
+      android:layout_height="40dp"
+      android:background="#e7e9ef"
+      android:inputType="numberPassword"
+      android:hint="Enter Current PIN"
+      android:gravity="center"
+
+      />
+  <TextView
+      android:id="@+id/invalidCurrentPassword"
+      android:layout_marginTop="10dp"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center"
+      android:gravity="center"
+      android:textColor="#f43f43"
+      android:visibility="gone"
+      android:text="Invalid Current PIN"
+      />
+
+    <EditText
+        android:id="@+id/newPin_textView"
+        android:layout_marginTop="20dp"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:inputType="numberPassword"
+        android:background="#e7e9ef"
+        android:hint="Enter New PIN"
+        android:gravity="center"
+
+        />
+  <TextView
+      android:id="@+id/invalidNewPassword"
+      android:layout_marginTop="10dp"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center"
+      android:gravity="center"
+      android:textColor="#f43f43"
+      android:visibility="gone"
+      android:text="PIN should be of minimum 4 digits"
+      />
+    <Button
+        android:id="@+id/changePassword_button"
+        android:layout_marginTop="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Change Password"
+        />
+
+
+</LinearLayout>
