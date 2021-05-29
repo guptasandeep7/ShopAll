@@ -57,17 +57,17 @@ public class HomeFragment extends Fragment implements Serializable {
         View root = inflater.inflate(R.layout.fragment_home, container, false);
 
         //RecyclerView
-//        mRecyclerView = (RecyclerView)root.findViewById(R.id.recyclerView);
-//        LinearLayoutManager layoutManager= new LinearLayoutManager(getContext(),LinearLayoutManager.HORIZONTAL, false);
-//        mRecyclerView.setLayoutManager(layoutManager);
-//        mRecyclerView.setItemAnimator(new DefaultItemAnimator());
-//        recyclerList = new ArrayList<Recycler>();
-//
-//        recyclerList.add(new Recycler(R.drawable.bgimage,"first"));
-//        recyclerList.add(new Recycler(R.drawable.bagimage,"Second"));
-//
-//        CustomAdapter customAdapter = new CustomAdapter(getContext(),recyclerList);
-//        mRecyclerView.setAdapter(customAdapter);
+        mRecyclerView = (RecyclerView)root.findViewById(R.id.recyclerView);
+        LinearLayoutManager layoutManager= new LinearLayoutManager(getContext(),LinearLayoutManager.HORIZONTAL, false);
+        mRecyclerView.setLayoutManager(layoutManager);
+        mRecyclerView.setItemAnimator(new DefaultItemAnimator());
+        recyclerList = new ArrayList<Recycler>();
+
+        recyclerList.add(new Recycler(R.drawable.bgimage,"first"));
+        recyclerList.add(new Recycler(R.drawable.bagimage,"Second"));
+
+        CustomAdapter customAdapter = new CustomAdapter(getContext(),recyclerList);
+        mRecyclerView.setAdapter(customAdapter);
 
 //        //RecyclerView 2
 //        mRecyclerView2 = (RecyclerView)root.findViewById(R.id.recyclerView2);
